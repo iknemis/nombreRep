@@ -2,8 +2,7 @@
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-    
+           
         //Inicializacion de la lista de computadores
         Computador[] arregloComputadores = new Computador[5]; 
         //Definicion de cada componente de la lista 
@@ -12,9 +11,10 @@ public class App {
         arregloComputadores[2] = new DeMesa(1300000,8); 
         arregloComputadores[3] = new Portatil(2016,21,1650000,true); 
         arregloComputadores[4] = new Portatil(1900000,false); 
-        /* //Inicializacion de la solucion (Clase PrecioTotal) 
+        //Inicializacion de la solucion (Clase PrecioTotal) 
         PrecioTotal solucion = new PrecioTotal(arregloComputadores); 
-        //Mostrar Totales solucion.mostrarTotales(); */
+        //Mostrar Totales 
+        solucion.mostrarTotales();
 
         //Inicializacion de la lista de computadores 
         Computador[] arregloComputadores2 = new Computador[5]; 
@@ -24,10 +24,10 @@ public class App {
         arregloComputadores2[2] = new DeMesa(1300000,8); 
         arregloComputadores2[3] = new DeMesa(1650000,16); 
         arregloComputadores2[4] = new DeMesa(21,1659000); 
-        /* //Inicializacion de la solucion (Clase PrecioTotal) 
+        //Inicializacion de la solucion (Clase PrecioTotal) 
         PrecioTotal solucion2 = new PrecioTotal(arregloComputadores2); 
         //Mostrar Totales
-         solucion2.mostrarTotales(); */
+         solucion2.mostrarTotales();
     }
 }
 
@@ -92,17 +92,3 @@ class Computador {
     }
 
 }
-
-
-
- //Clase Precio Total
-/*
- Atributos: 
- - totalComputadores: double
- - totalPortatiles : double
- -totalDeMesa : double
- -listaComputadores: Computador
- 
- Métods:
- + mostrarTotales()
- */
