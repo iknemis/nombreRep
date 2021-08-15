@@ -1,4 +1,5 @@
 public class Portatil extends Computador{
+    // Con extends se heredan los métodos y atributos de
     // Atributos
     private boolean tarjeraDeVideo = false;
     //Getter
