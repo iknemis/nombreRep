@@ -28,8 +28,9 @@ public class Portatil extends Computador{
         }
 
     // Métodos
+    // Método para calcular precio de un computador Portatil 
     public double calcularPrecio(){
-        double factor;
+        double factor; // El precio varia en función de si tiene o no tarjeta de video
         if (this.isTarjeraDeVideo()){
             factor = 1.2;
         } else {
